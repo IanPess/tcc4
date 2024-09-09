@@ -1,0 +1,195 @@
+/*header*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&display=swap');
+
+:root {
+}
+
+/*main*/
+
+main{
+    padding-top: 90px;
+}
+
+#container_main_principal{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#info_diaria{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display:flex;
+    color: var(--white);
+}
+
+#barra_lateral{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 440px;
+    width: 5px;
+    background-color: var(--white);
+}
+
+#conteudo_diario{
+    margin: auto 0;
+}
+
+#umidade{
+    font-size: 45px;
+    margin-left: -5px;
+    line-height: 0.8;
+}
+
+#time{
+    font-size: 350px;
+    line-height: 0.8;
+    margin-left: -10px;
+}
+
+#conteudo_menor{
+    display:flex;
+    position: relative;
+    margin-left: -7px;
+}
+
+#date{
+    font-size: 120px;
+    line-height: 0.8;
+}
+
+#day{
+    font-size: 70px;
+    line-height: 0.8;
+}
+
+#temperatura{
+    font-size: 100px;
+    line-height: 0.8;
+    right: 20px;
+    position: absolute;
+}
+
+#diario {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: lightgreen; /* Cor de fundo para visualização */
+    width: 600px;
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    background-color: rgba(0, 0, 0, 0.37);
+    padding: 16px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_dia{
+    width: 100%;
+    padding: 0 20px;
+   
+
+}
+
+.dia_titulo{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    color: var(--white);
+    position: relative;
+    padding: 10px 0;
+    height: 100%;
+    width: 100%;
+}
+
+.icon_calendar{
+    width: 25px;
+    height: 25px;
+    color: var(--black);
+    margin-right: 15px;
+    background-color: aliceblue;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.icon_calendar ion-icon{
+
+}
+
+.dia_titulo h2{
+    color: var(--white);
+    text-align: left;
+}
+
+.barra_horizontal{
+    border: 1px solid var(--white);
+    width: calc(100% - 46px);
+}
+
+.dia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    position: relative;
+    padding: 15px 0;
+    height: 100%;
+    width: 100%;
+}
+
+.icon_thermal{
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+}
+
+#sec_btn_dados{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Defina a largura desejada */
+    height: 100px; /* Defina a altura desejada */
+    background-color: lightcoral; /* Cor de fundo para visualização */
+}
+
+#b_dados{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: white; /* Cor do botão */
+    cursor: pointer;
+}
+
+/*API*/
+
+.section_dia {
+    width: 100%; /* Largura total do bloco */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.forecast_day {
+    padding: 8px 12px; /* Padding menor */
+    margin: 5px 0; /* Margem vertical para espaçamento */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex; /* Flex para alinhar elementos horizontalmente */
+    justify-content: space-between; /* Espaço entre os elementos */
+    width: 100%; /* Largura total */
+    font-size: 14px; /* Tamanho da fonte reduzido */
+}
+
+ion-icon {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
